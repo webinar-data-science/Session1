@@ -1,0 +1,3822 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://localhost/core"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://localhost/core"
+     versionIRI="http://localhost/core/2.2">
+    <Prefix name="" IRI="http://localhost/core"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#AEMTags"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Article"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Author"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Category"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Characteristic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Destination"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Destinations"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hyperlink"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Language"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Object"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Offer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Paragraph"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spnsor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UserType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#additionalManualTags"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#addressArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#aiChosenTags"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#altitude"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#city"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#contactPoint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#coordinatesReferencedSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#destinationDetails"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#district"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#duration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#entity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#eventOrSituation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#eventProgram"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#fullAddress"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#geographicalDistribution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#geometryType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ineligibleRegions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#itinerary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#itineraryUGC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#latitude"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#longitude"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#onlineContact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#owner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#partnerRecord"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#paymentMethods"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#postalCode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#priceSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#province"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#quantity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#region"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#source"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#spatialObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#stageItineraryUGC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#streetName"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#streetNumber"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#temporalEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#validity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAddress"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAddressComponent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAemTags"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAudio"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAuthors"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCategory"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDestination"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDestinationDetails"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDuration"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEligbleUsers"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEligibleQuantity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEmail"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEventProgram"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEvents"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasHyperlinks"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasImage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasItinerary"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMedia"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasNotEligibleRegions"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasNotEligibleUsers"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasOffer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasOnlineContactPoint"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasOwner"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPargraphs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPartner"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPaymentMethods"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPriceSpecification"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPrimaryTag"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSponsors"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStageitineraryUGC"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTags"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTelephone"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasValidity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasVideo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasWebSite"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#includes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#includesPointOfInterest"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAudioOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isImageOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isVideoOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#AEMTags"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#POIEmail"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#POIOpeningHours"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#URL"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#accountAuthorName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#additionalInformation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#additionalManualTags"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#agent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#aiChosenTags"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ambienceType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#bestPeriod"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#bookable"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#category"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#city"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#creationData"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#destinationType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#difficulty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#documentsPDF"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dtUpdate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#duration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#durationHours"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#emailPec"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#endDateTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#end_Date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#endingHourAM"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#endingHourPM"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#eventAbstract"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#eventTitle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#externalVideos"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#faxNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#fileAudio"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#firstPublicationDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#fullAddress"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#gifs"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#googleDescription"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasGiftCard"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPayment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasStock"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTheForkPay"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hyperlinkLable"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hyperlinkURL"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#idAdobePlace"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#idAemTags"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#idArticle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#idAuthor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#idDestination"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#idEsri"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#idEvent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#idHyperlink"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#idIngestedContent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#idItinerary"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#idItineraryUGC"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#idMedia"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#idOnlineContact"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#idParagraph"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#idPlace"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#idSource"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#idSponsor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#idStage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#idStageUGC"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#identifier"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#idsAdobePlace"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#imagecredit"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#images"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#insiderDescription"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#insiderStatus"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#insiderTip"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#internalVideos"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isCompleted"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isPublic"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isStartPoint"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#itinerary_end"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#itinerary_start"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#keywords"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#language"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#lastModificationDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#lastPubblicationDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#lastPublicationDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#lastUpdateDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#latitude"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#length"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#listOfServices"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#longDescription"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#longitude"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mainType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mediaCategory"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mediaCredit"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mediaDescription"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mediaEndDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mediaHeight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mediaLicenseURL"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mediaURL"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mediaWidth"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#numberOfReviews"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#officialName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#onlineContactPoint"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#openingHours"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#order"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#organizer"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#otherServices"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#otherType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#overTitle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#owner"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#parTitle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#partnerName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#postalCode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#price"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#priceCurrency"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#priceRange"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#primaryTag"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#rating"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#reached"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#readingTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#region"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#reservationInfo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#shortDescription"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#shortEventTitle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#specialOpeningHours"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#sponsor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#stageDays"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#stageUGCDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#stageUGCDateOrder"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#stageUGCType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#startDateTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#start_date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#startingHourAM"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#startingHourPM"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#status"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#structuredDurationDays"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#structuredDurationHours"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#subTitle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#telephoneNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#text"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#thematicArticleEvent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ticketPrice"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#title"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#type"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#unitOfMeasurement"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#userTypeCode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#userTypeDesc"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#validFrom"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#validTo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#value"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#virtualEvent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#webSiteURL"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#widgetDetails"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#widgetParameters"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#widgetURL"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#widgets"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#event"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#entity"/>
+            <Class IRI="#eventOrSituation"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasTags"/>
+                <Class IRI="#AEMTags"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#AEMTags"/>
+        <Class IRI="#Characteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Article"/>
+        <Class IRI="#entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Article"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasPargraphs"/>
+                <Class IRI="#Paragraph"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasPargraphs"/>
+                <Class IRI="#Paragraph"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Article"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAuthors"/>
+            <Class IRI="#Author"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Article"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSource"/>
+            <Class IRI="#source"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Article"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#includes"/>
+            <Class IRI="#Destination"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Article"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasEligbleUsers"/>
+            <Class IRI="#UserType"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Article"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasEvents"/>
+            <Class IRI="#event"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Article"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasHyperlinks"/>
+            <Class IRI="#Hyperlink"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Article"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasItinerary"/>
+            <Class IRI="#itinerary"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Article"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasNotEligibleUsers"/>
+            <Class IRI="#UserType"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Article"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasOffer"/>
+            <Class IRI="#Offer"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Article"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSponsors"/>
+            <Class IRI="#Spnsor"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Article"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#AEMTags"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Article"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#additionalManualTags"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Article"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#aiChosenTags"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Article"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#documentsPDF"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Article"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#externalVideos"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Article"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#fileAudio"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Article"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#gifs"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Article"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#images"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Article"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#internalVideos"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Article"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#URL"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Article"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#creationData"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Article"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#description"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Article"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#idArticle"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Article"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#overTitle"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Article"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#primaryTag"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Article"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#readingTime"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Article"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#subTitle"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Article"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#title"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Article"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#idIngestedContent"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Article"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#lastModificationDate"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Article"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#lastPubblicationDate"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Article"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#validFrom"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Article"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#validTo"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Author"/>
+        <Class IRI="#agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Author"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#description"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Author"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#idAuthor"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Author"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#name"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Author"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#idIngestedContent"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Category"/>
+        <Class IRI="#Characteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Category"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#value"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Destination"/>
+        <Class IRI="#entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Destination"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasEligbleUsers"/>
+            <Class IRI="#UserType"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Destination"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasOnlineContactPoint"/>
+            <Class IRI="#onlineContact"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Destination"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasHyperlinks"/>
+            <Class IRI="#Hyperlink"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Destination"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasNotEligibleUsers"/>
+            <Class IRI="#UserType"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Destination"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasPartner"/>
+            <Class IRI="#partnerRecord"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Destination"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#includes"/>
+            <Class IRI="#Destinations"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Destination"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasDestinationDetails"/>
+            <Class IRI="#destinationDetails"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Destination"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#AEMTags"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Destination"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#additionalManualTags"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Destination"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#aiChosenTags"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Destination"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#documentsPDF"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Destination"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#externalVideos"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Destination"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#fileAudio"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Destination"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#gifs"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Destination"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#images"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Destination"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#internalVideos"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Destination"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#ticketPrice"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Destination"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#category"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Destination"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#googleDescription"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Destination"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#idAdobePlace"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Destination"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#idDestination"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Destination"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#officialName"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Destination"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#primaryTag"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Destination"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#description"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Destination"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#destinationType"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Destination"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#firstPublicationDate"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Destination"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#idIngestedContent"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Destination"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#lastPublicationDate"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Destination"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#longDescription"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Destination"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#owner"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Destination"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#shortDescription"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Destinations"/>
+        <Class IRI="#Destination"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hyperlink"/>
+        <Class IRI="#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hyperlink"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hyperlinkURL"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hyperlink"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#idHyperlink"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hyperlink"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#description"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hyperlink"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#idIngestedContent"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hyperlink"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#name"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Language"/>
+        <Class IRI="#Characteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Language"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#value"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Offer"/>
+        <Class IRI="#entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Organization"/>
+        <Class IRI="#agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Paragraph"/>
+        <Class IRI="#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Paragraph"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasDestination"/>
+            <Class IRI="#Destination"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Paragraph"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasEvents"/>
+            <Class IRI="#event"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Paragraph"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasHyperlinks"/>
+            <Class IRI="#Hyperlink"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Paragraph"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasItinerary"/>
+            <Class IRI="#itinerary"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Paragraph"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasOffer"/>
+            <Class IRI="#Offer"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Paragraph"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#idParagraph"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Paragraph"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#text"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Paragraph"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#title"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Paragraph"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#durationHours"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Paragraph"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#idIngestedContent"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Paragraph"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#order"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Paragraph"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#stageDays"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Paragraph"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#structuredDurationDays"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Paragraph"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#structuredDurationHours"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Paragraph"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#subTitle"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spnsor"/>
+        <Class IRI="#Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spnsor"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#idIngestedContent"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spnsor"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#idSponsor"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spnsor"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#name"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stage"/>
+        <Class IRI="#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stage"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasDestination"/>
+            <Class IRI="#Destination"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stage"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasEvents"/>
+            <Class IRI="#event"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stage"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasHyperlinks"/>
+            <Class IRI="#Hyperlink"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stage"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasItinerary"/>
+            <Class IRI="#itinerary"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stage"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasOffer"/>
+            <Class IRI="#Offer"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stage"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#idParagraph"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stage"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#parTitle"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stage"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#text"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stage"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#durationHours"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stage"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#idIngestedContent"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stage"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#order"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stage"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#stageDays"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stage"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#structuredDurationDays"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stage"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#structuredDurationHours"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stage"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#subTitle"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UserType"/>
+        <Class IRI="#Characteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UserType"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#userTypeCode"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UserType"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#dtUpdate"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UserType"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#userTypeDesc"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#additionalManualTags"/>
+        <Class IRI="#Characteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#addressArea"/>
+        <Class IRI="#destinationDetails"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#agent"/>
+        <Class IRI="#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#aiChosenTags"/>
+        <Class IRI="#Characteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#altitude"/>
+        <Class IRI="#destinationDetails"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#city"/>
+        <Class IRI="#destinationDetails"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#contactPoint"/>
+        <Class IRI="#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#coordinatesReferencedSystem"/>
+        <Class IRI="#destinationDetails"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#country"/>
+        <Class IRI="#destinationDetails"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#destinationDetails"/>
+        <Class IRI="#spatialObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#destinationDetails"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#idPlace"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#destinationDetails"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#idEsri"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#district"/>
+        <Class IRI="#destinationDetails"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#duration"/>
+        <Class IRI="#temporalEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#duration"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#unitOfMeasurement"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#duration"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#value"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event"/>
+        <Class IRI="#eventOrSituation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasDestination"/>
+            <Class IRI="#Destination"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasEligbleUsers"/>
+            <Class IRI="#UserType"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasEventProgram"/>
+            <Class IRI="#eventProgram"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasNotEligibleUsers"/>
+            <Class IRI="#UserType"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasOffer"/>
+            <Class IRI="#Offer"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSponsors"/>
+            <Class IRI="#Spnsor"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#includes"/>
+            <Class IRI="#Paragraph"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#includes"/>
+            <Class IRI="#event"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasOnlineContactPoint"/>
+            <Class IRI="#onlineContact"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#hasValidity"/>
+            <Class IRI="#validity"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#organizer"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#AEMTags"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#additionalManualTags"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#aiChosenTags"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#documentsPDF"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#externalVideos"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#fileAudio"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#gifs"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#idsAdobePlace"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#images"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#internalVideos"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#ticketPrice"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#description"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#endDateTime"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#eventTitle"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#idEvent"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#primaryTag"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#startDateTime"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#URL"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#agent"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#duration"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#firstPublicationDate"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#idIngestedContent"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#lastPublicationDate"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#openingHours"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#subTitle"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#type"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#validFrom"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#validTo"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#event"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#virtualEvent"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#eventOrSituation"/>
+        <Class IRI="#entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#eventProgram"/>
+        <Class IRI="#eventOrSituation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#eventProgram"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasDestination"/>
+            <Class IRI="#Destination"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#eventProgram"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#description"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#eventProgram"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#title"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#eventProgram"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#end_Date"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#eventProgram"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#endingHourAM"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#eventProgram"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#endingHourPM"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#eventProgram"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#idIngestedContent"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#eventProgram"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#start_date"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#eventProgram"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#startingHourAM"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#eventProgram"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#startingHourPM"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fullAddress"/>
+        <Class IRI="#destinationDetails"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#geographicalDistribution"/>
+        <Class IRI="#destinationDetails"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#geometryType"/>
+        <Class IRI="#destinationDetails"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ineligibleRegions"/>
+        <Class IRI="#spatialObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ineligibleRegions"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#value"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itinerary"/>
+        <Class IRI="#entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itinerary"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasDestination"/>
+            <Class IRI="#Destination"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itinerary"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasEligbleUsers"/>
+            <Class IRI="#UserType"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itinerary"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#includes"/>
+            <Class IRI="#Stage"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itinerary"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasAuthors"/>
+            <Class IRI="#Author"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itinerary"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasEvents"/>
+            <Class IRI="#event"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itinerary"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasHyperlinks"/>
+            <Class IRI="#Hyperlink"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itinerary"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasNotEligibleUsers"/>
+            <Class IRI="#UserType"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itinerary"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasOffer"/>
+            <Class IRI="#Offer"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itinerary"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSponsors"/>
+            <Class IRI="#Spnsor"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itinerary"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#hasSource"/>
+            <Class IRI="#source"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itinerary"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#AEMTags"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itinerary"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#additionalManualTags"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itinerary"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#aiChosenTags"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itinerary"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#documentsPDF"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itinerary"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#externalVideos"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itinerary"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#fileAudio"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itinerary"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#gifs"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itinerary"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#idsAdobePlace"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itinerary"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#images"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itinerary"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#internalVideos"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itinerary"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#creationData"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itinerary"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#description"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itinerary"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#idItinerary"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itinerary"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#primaryTag"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itinerary"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#title"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itinerary"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#URL"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itinerary"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#bestPeriod"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itinerary"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#difficulty"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itinerary"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#durationHours"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itinerary"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#firstPublicationDate"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itinerary"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#idIngestedContent"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itinerary"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#lastModificationDate"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itinerary"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#lastPubblicationDate"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itinerary"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#overTitle"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itinerary"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#structuredDurationDays"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itinerary"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#structuredDurationHours"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itinerary"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#subTitle"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itinerary"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#type"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itinerary"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#validFrom"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itinerary"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#validTo"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itineraryUGC"/>
+        <Class IRI="#entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itineraryUGC"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasStageitineraryUGC"/>
+            <Class IRI="#stageItineraryUGC"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itineraryUGC"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#includes"/>
+            <Class IRI="#itinerary"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itineraryUGC"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#images"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itineraryUGC"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#idItineraryUGC"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itineraryUGC"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#itinerary_end"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itineraryUGC"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#itinerary_start"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itineraryUGC"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#title"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itineraryUGC"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#accountAuthorName"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itineraryUGC"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#creationData"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itineraryUGC"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#description"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itineraryUGC"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#isCompleted"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itineraryUGC"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#isPublic"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itineraryUGC"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#lastModificationDate"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itineraryUGC"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#start_date"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itineraryUGC"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#subTitle"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#latitude"/>
+        <Class IRI="#destinationDetails"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#longitude"/>
+        <Class IRI="#destinationDetails"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#onlineContact"/>
+        <Class IRI="#contactPoint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#onlineContact"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#onlineContactPoint"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#onlineContact"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#idOnlineContact"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#owner"/>
+        <Class IRI="#agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#owner"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#value"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#partnerRecord"/>
+        <Class IRI="#entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#partnerRecord"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#openingHours"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#partnerRecord"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#telephoneNumber"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#partnerRecord"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#AEMTags"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#partnerRecord"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#additionalManualTags"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#partnerRecord"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#aiChosenTags"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#partnerRecord"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#description"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#partnerRecord"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#listOfServices"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#partnerRecord"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#otherServices"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#partnerRecord"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#otherType"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#partnerRecord"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#city"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#partnerRecord"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#fullAddress"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#partnerRecord"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasGiftCard"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#partnerRecord"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasPayment"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#partnerRecord"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasStock"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#partnerRecord"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasTheForkPay"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#partnerRecord"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#latitude"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#partnerRecord"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#longitude"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#partnerRecord"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#mainType"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#partnerRecord"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#name"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#partnerRecord"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#numberOfReviews"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#partnerRecord"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#partnerName"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#partnerRecord"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#postalCode"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#partnerRecord"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#rating"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#partnerRecord"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#region"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#partnerRecord"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#widgets"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#partnerRecord"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#ambienceType"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#partnerRecord"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#bookable"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#partnerRecord"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#images"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#partnerRecord"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#insiderDescription"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#partnerRecord"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#insiderStatus"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#partnerRecord"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#insiderTip"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#paymentMethods"/>
+        <Class IRI="#Characteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#paymentMethods"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#value"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#postalCode"/>
+        <Class IRI="#destinationDetails"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#priceSpecification"/>
+        <Class IRI="#Characteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#priceSpecification"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasEligbleUsers"/>
+            <Class IRI="#UserType"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#priceSpecification"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasNotEligibleRegions"/>
+            <Class IRI="#ineligibleRegions"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#priceSpecification"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasNotEligibleUsers"/>
+            <Class IRI="#UserType"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#priceSpecification"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasDuration"/>
+            <Class IRI="#duration"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#priceSpecification"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasEligibleQuantity"/>
+            <Class IRI="#quantity"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#priceSpecification"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#name"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#priceSpecification"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#price"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#priceSpecification"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#priceCurrency"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#priceSpecification"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#unitOfMeasurement"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#province"/>
+        <Class IRI="#destinationDetails"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#quantity"/>
+        <Class IRI="#Characteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#quantity"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#unitOfMeasurement"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#quantity"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#value"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#region"/>
+        <Class IRI="#destinationDetails"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#source"/>
+        <Class IRI="#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#source"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#URL"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#source"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#description"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#source"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#idSource"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#source"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#name"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#source"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#idIngestedContent"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#spatialObject"/>
+        <Class IRI="#location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#stageItineraryUGC"/>
+        <Class IRI="#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#stageItineraryUGC"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#idStage"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#stageItineraryUGC"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#idStageUGC"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#stageItineraryUGC"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#isStartPoint"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#stageItineraryUGC"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#reached"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#stageItineraryUGC"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#stageUGCDate"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#stageItineraryUGC"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#stageUGCDateOrder"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#stageItineraryUGC"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#stageUGCType"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#stageItineraryUGC"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#durationHours"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#stageItineraryUGC"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#stageDays"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#stageItineraryUGC"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#structuredDurationDays"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#stageItineraryUGC"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#structuredDurationHours"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#streetName"/>
+        <Class IRI="#destinationDetails"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#streetNumber"/>
+        <Class IRI="#destinationDetails"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#validity"/>
+        <Class IRI="#Characteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#validity"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#validFrom"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#validity"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#validTo"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasAudio"/>
+        <ObjectProperty IRI="#isAudioOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasImage"/>
+        <ObjectProperty IRI="#isImageOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasVideo"/>
+        <ObjectProperty IRI="#isVideoOf"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAudio"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAuthors"/>
+        <Class IRI="#Article"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDestination"/>
+        <Class IRI="#Article"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEligbleUsers"/>
+        <Class IRI="#Article"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEvents"/>
+        <Class IRI="#Paragraph"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasHyperlinks"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasImage"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAuthors"/>
+        <Class IRI="#Author"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDestination"/>
+        <Class IRI="#Destination"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasEligbleUsers"/>
+        <Class IRI="#UserType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasHyperlinks"/>
+        <Class IRI="#Hyperlink"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#POIEmail"/>
+        <DataProperty IRI="#onlineContactPoint"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#POIOpeningHours"/>
+        <DataProperty IRI="#onlineContactPoint"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#emailPec"/>
+        <DataProperty IRI="#onlineContactPoint"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#faxNumber"/>
+        <DataProperty IRI="#onlineContactPoint"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#idAdobePlace"/>
+        <DataProperty IRI="#idsAdobePlace"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#idAemTags"/>
+        <DataProperty IRI="#identifier"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#idArticle"/>
+        <DataProperty IRI="#identifier"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#idAuthor"/>
+        <DataProperty IRI="#identifier"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#idDestination"/>
+        <DataProperty IRI="#identifier"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#idEsri"/>
+        <DataProperty IRI="#identifier"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#idEvent"/>
+        <DataProperty IRI="#identifier"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#idHyperlink"/>
+        <DataProperty IRI="#identifier"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#idIngestedContent"/>
+        <DataProperty IRI="#identifier"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#idItinerary"/>
+        <DataProperty IRI="#identifier"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#idItineraryUGC"/>
+        <DataProperty IRI="#identifier"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#idMedia"/>
+        <DataProperty IRI="#identifier"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#idOnlineContact"/>
+        <DataProperty IRI="#identifier"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#idParagraph"/>
+        <DataProperty IRI="#identifier"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#idPlace"/>
+        <DataProperty IRI="#identifier"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#idSource"/>
+        <DataProperty IRI="#identifier"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#idSponsor"/>
+        <DataProperty IRI="#identifier"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#idStage"/>
+        <DataProperty IRI="#identifier"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#idStageUGC"/>
+        <DataProperty IRI="#identifier"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#lastPublicationDate"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#specialOpeningHours"/>
+        <DataProperty IRI="#onlineContactPoint"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#status"/>
+        <DataProperty IRI="#onlineContactPoint"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#telephoneNumber"/>
+        <DataProperty IRI="#onlineContactPoint"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#webSiteURL"/>
+        <DataProperty IRI="#onlineContactPoint"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#widgetDetails"/>
+        <DataProperty IRI="#widgets"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#widgetParameters"/>
+        <DataProperty IRI="#widgets"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#widgetURL"/>
+        <DataProperty IRI="#widgets"/>
+    </SubDataPropertyOf>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Article</IRI>
+        <Literal xml:lang="it">Classe principale che rappresenta un determinato articolo.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Article</IRI>
+        <Literal xml:lang="it">Articolo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Author</IRI>
+        <Literal xml:lang="it">Questa classe rappresenta l&apos;autore.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Author</IRI>
+        <Literal>Author</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Author</IRI>
+        <Literal xml:lang="it">Autore</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Category</IRI>
+        <Literal xml:lang="it">Categoria</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Category</IRI>
+        <Literal xml:lang="en">Category</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Category</IRI>
+        <Literal xml:lang="it">Questa classe rappresenta la categoria di una destination; viene fornita da Google e alcuni esempi possono essere: gym,school,store,dentist etc..</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Destination</IRI>
+        <Literal xml:lang="it">Classe principale utilizzata per rappresentare la destinazione.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Destination</IRI>
+        <Literal xml:lang="en">Destination</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Destination</IRI>
+        <Literal xml:lang="it">Destinazione</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Destinations</IRI>
+        <Literal xml:lang="en">Linked Destinations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Language</IRI>
+        <Literal xml:lang="it">Questa classe rappresenta la lingua in cui ci viene fornito il dato.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Language</IRI>
+        <Literal xml:lang="en">Language</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Object</IRI>
+        <Literal>Object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Offer</IRI>
+        <Literal>Classe principale utilizzata per rappresentare l’offerta legata ad un’esperienza.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Offer</IRI>
+        <Literal>Offer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Offer</IRI>
+        <Literal xml:lang="it">Questa entità è priva di attributi perchè in fase di analisi, in attesa delle specifiche dal partner.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Paragraph</IRI>
+        <Literal xml:lang="it">Classe utilizzata per rappresentare il paragrafo di un determinato articolo.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Spnsor</IRI>
+        <Literal>Sponsor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Stage</IRI>
+        <Literal xml:lang="it">Classe utilizzata per rappresentare lo stage di un determinato itinerario.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#URL</IRI>
+        <Literal>URL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UserType</IRI>
+        <Literal xml:lang="it">Questa classe rappresenta la tipologia di persone per la quale è stata pensata l&apos;offerta. Es: coppie, famiglie etc..</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UserType</IRI>
+        <Literal xml:lang="en">User Type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#additionalInformation</IRI>
+        <Literal>additional information</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#addressArea</IRI>
+        <Literal>Address Area</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#agent</IRI>
+        <Literal xml:lang="en">Agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#altitude</IRI>
+        <Literal>Altitude</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#city</IRI>
+        <Literal>City</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#contactPoint</IRI>
+        <Literal>Contact Point</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#coordinatesReferencedSystem</IRI>
+        <Literal>Coordinates Referenced System</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#country</IRI>
+        <Literal>Country</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#creationData</IRI>
+        <Literal>creation data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#destinationDetails</IRI>
+        <Literal>Classe che rappresenta i dettagli di una destinazione. Es: address, geometry.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#destinationDetails</IRI>
+        <Literal xml:lang="en">Destination Details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#district</IRI>
+        <Literal>District</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#duration</IRI>
+        <Literal xml:lang="it">Classe utilizzata per rappresentare la durata.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#duration</IRI>
+        <Literal>Duration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#durationHours</IRI>
+        <Literal xml:lang="en">duration hours</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#endDateTime</IRI>
+        <Literal>end datetime</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#entity</IRI>
+        <Literal xml:lang="en">Entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#event</IRI>
+        <Literal xml:lang="it">Evento</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#event</IRI>
+        <Literal xml:lang="it">Questa classe rappresenta l&apos;evento.Es: Business Event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#event</IRI>
+        <Literal>Event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#eventAbstract</IRI>
+        <Literal>event abstract</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#eventOrSituation</IRI>
+        <Literal xml:lang="en">Event or Situation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#eventProgram</IRI>
+        <Literal xml:lang="en">Event Program</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#eventTitle</IRI>
+        <Literal>event title</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#fullAddress</IRI>
+        <Literal>Full Address</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#geographicalDistribution</IRI>
+        <Literal>Geographical Distribution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#geometryType</IRI>
+        <Literal>Geometry type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAddress</IRI>
+        <Literal>has address</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAddressComponent</IRI>
+        <Literal>has address component</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAemTags</IRI>
+        <Literal>has aem tags</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAudio</IRI>
+        <Literal xml:lang="en">has audio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAuthors</IRI>
+        <Literal xml:lang="en">has authors</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasCategory</IRI>
+        <Literal>has category</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasDestination</IRI>
+        <Literal>has destination</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasDestinationDetails</IRI>
+        <Literal>has destination details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasDuration</IRI>
+        <Literal>has duration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasEligbleUsers</IRI>
+        <Literal xml:lang="en">has eligible users</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasEligibleQuantity</IRI>
+        <Literal>has eligible quantity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasEmail</IRI>
+        <Literal>has email</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasEventProgram</IRI>
+        <Literal xml:lang="en">has event program</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasEvents</IRI>
+        <Literal xml:lang="en">has events</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasHyperlinks</IRI>
+        <Literal xml:lang="en">has hyperlinks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasImage</IRI>
+        <Literal xml:lang="en">has image</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasItinerary</IRI>
+        <Literal>has itinerary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasMedia</IRI>
+        <Literal>has media</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasNotEligibleRegions</IRI>
+        <Literal>has not eligible regions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasNotEligibleUsers</IRI>
+        <Literal xml:lang="en">has not eligible users</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasOffer</IRI>
+        <Literal xml:lang="en">has offer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasOnlineContactPoint</IRI>
+        <Literal>has online contact point</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasOwner</IRI>
+        <Literal>has owner</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPargraphs</IRI>
+        <Literal xml:lang="en">has paragraph</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPartner</IRI>
+        <Literal xml:lang="en">has partner</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPaymentMethods</IRI>
+        <Literal>has payment methods</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPriceSpecification</IRI>
+        <Literal>has price specification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPrimaryTag</IRI>
+        <Literal>has primary tag</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSource</IRI>
+        <Literal>has source</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSponsors</IRI>
+        <Literal xml:lang="en">has sponsor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasTelephone</IRI>
+        <Literal>has telephone</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasValidity</IRI>
+        <Literal>has validity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasVideo</IRI>
+        <Literal xml:lang="en">has video</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasWebSite</IRI>
+        <Literal>has web site</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hyperlinkLable</IRI>
+        <Literal>hyperlink Lable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hyperlinkURL</IRI>
+        <Literal>hyperlink URL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#imagecredit</IRI>
+        <Literal xml:lang="en">image Credit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#images</IRI>
+        <Literal xml:lang="en">images</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#includesPointOfInterest</IRI>
+        <Literal xml:lang="en">includes point of interest</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ineligibleRegions</IRI>
+        <Literal xml:lang="it">Questa classe rappresenta gli stati non idonei ad accedere ad una particolare offerta.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ineligibleRegions</IRI>
+        <Literal>Ineligible Regions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isAudioOf</IRI>
+        <Literal xml:lang="en">is audio of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isImageOf</IRI>
+        <Literal xml:lang="en">is image of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isStartPoint</IRI>
+        <Literal xml:lang="en">is start point</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isVideoOf</IRI>
+        <Literal xml:lang="en">is video of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#itinerary</IRI>
+        <Literal>Questa classe rappresenta un itinerario. Es: itinerario in bici.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#itinerary</IRI>
+        <Literal>Itinerary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#itineraryUGC</IRI>
+        <Literal xml:lang="en">Itinerary UGC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#lastModificationDate</IRI>
+        <Literal>last modification date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#lastPubblicationDate</IRI>
+        <Literal>last pubblication date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#lastUpdateDate</IRI>
+        <Literal>last update date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#latitude</IRI>
+        <Literal>Latitude</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#latitude</IRI>
+        <Literal xml:lang="it">Latitudine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#latitude</IRI>
+        <Literal xml:lang="it">Questa classe rappresenta la latitudine di una destinazione.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#location</IRI>
+        <Literal xml:lang="en">Location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#longitude</IRI>
+        <Literal xml:lang="it">Questa classe rappresenta la longitudine di una destinazione.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#longitude</IRI>
+        <Literal>Longitude</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#longitude</IRI>
+        <Literal xml:lang="it">Longitudine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#mediaCategory</IRI>
+        <Literal>media category</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#mediaCredit</IRI>
+        <Literal>media credit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#mediaDescription</IRI>
+        <Literal>media description</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#mediaEndDate</IRI>
+        <Literal xml:lang="en">media end date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#mediaHeight</IRI>
+        <Literal>media height</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#mediaLicenseURL</IRI>
+        <Literal>media license URL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#mediaURL</IRI>
+        <Literal>media URL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#mediaWidth</IRI>
+        <Literal>media width</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#onlineContact</IRI>
+        <Literal>Online Contact</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#onlineContactPoint</IRI>
+        <Literal>Online Contact Point</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#openingHours</IRI>
+        <Literal>opening hours</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#overTitle</IRI>
+        <Literal>over Title</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#owner</IRI>
+        <Literal xml:lang="it">Questa classe rappresenta il proprietario di una particolare struttura.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#owner</IRI>
+        <Literal>Owner</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#owner</IRI>
+        <Literal xml:lang="it">Proprietario</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#partnerRecord</IRI>
+        <Literal xml:lang="en">PartnerRecord</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#paymentMethods</IRI>
+        <Literal xml:lang="it">Classe utilizzata per rappresentare il metodo di pagamento disponibile.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#paymentMethods</IRI>
+        <Literal>Payment Methods</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#postalCode</IRI>
+        <Literal>Postal Code</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#price</IRI>
+        <Literal>price</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#priceCurrency</IRI>
+        <Literal>price currency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#priceRange</IRI>
+        <Literal>price range</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#priceSpecification</IRI>
+        <Literal xml:lang="it">Questa classe rappresenta le specifiche di prezzo di una particolare offerta</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#priceSpecification</IRI>
+        <Literal>Price Specification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#primaryTag</IRI>
+        <Literal xml:lang="en">primary tag</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#province</IRI>
+        <Literal>Province</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#quantity</IRI>
+        <Literal xml:lang="it">Questa classe rappresenta una determinata quantità.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#quantity</IRI>
+        <Literal>Quantity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#readingTime</IRI>
+        <Literal>reading time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#region</IRI>
+        <Literal xml:lang="it">Es: Piemonte, Lombardia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#region</IRI>
+        <Literal>Region</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#reservationInfo</IRI>
+        <Literal>reservation info</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#shortEventTitle</IRI>
+        <Literal>short event title</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#source</IRI>
+        <Literal xml:lang="it">Questa classe rappresenta la risorsa di un articolo.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#source</IRI>
+        <Literal>Source</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#spatialObject</IRI>
+        <Literal xml:lang="en">Spatial Object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#stageDays</IRI>
+        <Literal xml:lang="en">stage days</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#stageItineraryUGC</IRI>
+        <Literal xml:lang="en">Stage Itinerary UGC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#startDateTime</IRI>
+        <Literal>start datetime</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#streetName</IRI>
+        <Literal>Street Name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#streetNumber</IRI>
+        <Literal>Street Number</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#subTitle</IRI>
+        <Literal>subTitle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#temporalEntity</IRI>
+        <Literal xml:lang="en">Temporal Entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#thematicArticleEvent</IRI>
+        <Literal>thematic article event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#unitOfMeasurement</IRI>
+        <Literal>unit of measurement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#userTypeCode</IRI>
+        <Literal>user type code</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#userTypeDesc</IRI>
+        <Literal>user type desc</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#validFrom</IRI>
+        <Literal>valid from</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#validTo</IRI>
+        <Literal>valid to</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#validity</IRI>
+        <Literal xml:lang="it">Classe utilizzata per rappresentare il periodo in cui l’offerta è usufruibile.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#validity</IRI>
+        <Literal>Validity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#value</IRI>
+        <Literal>value</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
